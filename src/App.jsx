@@ -753,7 +753,7 @@ function SkillsScroll() {
   return (
     <section
       ref={containerRef}
-      style={{ height: `${skills.length * 100}vh` }}
+      style={{ height: `${(skills.length - 1) * 100}vh` }}
       className="relative bg-neutral-900"
     >
       {/* Sticky container */}
@@ -788,6 +788,7 @@ function SkillsScroll() {
     </section>
   );
 }
+
 
 
 export default function App() {
